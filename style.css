@@ -1,4 +1,4 @@
-/* RESET de base */
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,97 +7,80 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
     background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 80%;
     margin: 0 auto;
-    padding: 20px;
 }
 
+/* Header */
 header {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
+    margin-bottom: 10px;
     font-size: 2.5em;
-  
 }
 
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
+nav ul {
+    list-style: none;
 }
 
-section {
-    margin: 40px 0;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Sections */
+.section {
+    padding: 40px 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #4CAF50;
     font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.about p, .experience ul, .contact form {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    padding: 5px 0;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact input, .contact textarea {
-    padding: 10px;
+    color: #333;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
 }
 
-.contact button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
 }
 
-.contact button:hover {
-    background-color: #45a049;
-}
-
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    margin-top: 30px;
 }
 
-footer a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+footer p {
+    font-size: 0.9em;
 }
